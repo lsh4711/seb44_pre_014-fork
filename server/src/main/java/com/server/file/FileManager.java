@@ -6,13 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 @Component
 public class FileManager {
-    @Value("${upload.path}")
+    @Vdalue("${upload.path}")
     private String basePath;
 
     public void saveFiles(long id, String resources, List<MultipartFile> files) {
